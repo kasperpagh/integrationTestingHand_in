@@ -39,10 +39,9 @@ public class Test1
             scanner.useDelimiter(";");
             while (scanner.hasNext())
             {
-//                sb.append(scanner.next()+", ");
                 String[] strings = new String[2];
                 strings = scanner.next().split(",");
-                DataModel datamodel = new DataModel(strings[0] +"",strings[1]+"");testData.add(new DataModel(""+strings[0], strings[1]));
+                DataModel datamodel = new DataModel(strings[0] +"",strings[1]+"");
                 testData.add(datamodel);
             }
             scanner.close();
@@ -51,16 +50,6 @@ public class Test1
         {
             scanner.close();
         }
-
-
-//        testData.add(new DataModel("1", "data point et") );
-//        testData.add( new DataModel("2", "data point to"));
-//        testData.add(new DataModel("3", "data point to") );
-//        testData.add(new DataModel("4", "data point to") );
-//        testData.add(new DataModel("5", "data point to") );
-//        testData.add(new DataModel("6", "data point to") );
-//        testData.add( new DataModel("1", "data point to") ); //won't save due to key-collision
-//        testData.add(new DataModel("8", "123123123") ); //won't save due to numbers in the data
 
     }
 
